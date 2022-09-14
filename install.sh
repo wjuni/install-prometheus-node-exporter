@@ -3,9 +3,9 @@
 sudo cp node_exporter.service /etc/systemd/system/node_exporter.service
 
 cd /tmp
-wget https://github.com/prometheus/node_exporter/releases/download/v1.0.1/node_exporter-1.0.1.linux-amd64.tar.gz
-tar -xvzf node_exporter-1.0.1.linux-amd64.tar.gz
-sudo mv node_exporter-1.0.1.linux-amd64/node_exporter /usr/local/bin
+wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
+tar -xvzf node_exporter-1.3.1.linux-amd64.tar.gz
+sudo mv node_exporter-1.3.1.linux-amd64/node_exporter /usr/local/bin
 
 sudo useradd -s /sbin/nologin node_exporter
 sudo systemctl daemon-reload
